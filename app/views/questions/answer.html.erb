@@ -1,0 +1,10 @@
+<%case @question%>
+<%when 'I am going to work'%>
+  Great!
+<% when @question.end_with?('?') == true %>
+  Silly question, get dressed and go to work!
+<%else%>
+  I dont care, get dressed and go to work!
+<%end%>
+<br>
+<%= link_to 'Ask Page', ask_path %>
